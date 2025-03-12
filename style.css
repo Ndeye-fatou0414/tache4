@@ -38,6 +38,7 @@ nav a{
   background: url(image/mare-la-maddalena.jpg)  no-repeat;
   background-size: cover;
   height: 250%;
+
   
 }
 .index-html .image {
@@ -102,93 +103,41 @@ nav a{
   padding: 20px;
   background-color: #eee;
   
+  
+  
 }
 .campus ul{
   padding: 5%;
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 10%;
 }  
 .campus li {
   list-style-type: none;
+ 
+}
+.ensem{
+  display: flex;
 }
 .partie1{
   display: flex;
+  
 }
 .partie2{
   display: flex;
 
 }
-.java{
-  width: 25%;
-  height: 300px;
-  background-color: burlywood;
-  position: relative;
-  bottom: 900px;
-}
-.java img{
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  top: 70px;
-  left: 90px;
-}
-.inkscape{
-  width: 25%;
-  height: 300px;
-  background-color: orange;
-  position: relative;
-  left: 314px;
-  bottom: 1200px;
-}
-.inkscape img{
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  top: 90px;
-  left: 95px;
-}
-.Ae{
-  width: 26%;
-  height: 300px;
-  background-color: yellow;
-  margin-left: 628px;
-  position: relative;
-  bottom: 1500px;
-}
-.Ae img{
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  top: 100px;
-  left: 110px;
-}
-.python{
-  width: 26%;
-  height: 300px;
-  background-color: greenyellow;
-  position: relative;
-  left: 950px;
-  bottom: 1800px;
-
-}
-.python img{
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  top: 90px;
-  left: 90px;
-} 
 .admission {
   font-weight: bold;
   padding: 20px;
   background-color: #eee;
 }
-
 .ensemble{
   display: flex;
-  gap: 400px;
-}
+  gap: 400%;
+
+} 
 h3{
   margin-left: 250px;
  }
@@ -200,9 +149,12 @@ h6{
   top: 39px;
   
 }
-.suite .barre{
+.admission .art{
+  border-color: aqua;
+}
+/* .suite .barre{
   margin-bottom: 10%;
-} 
+}  */
  .barre{
   background-color: greenyellow;
   width: 80%;
@@ -222,7 +174,7 @@ h6{
   margin-top: 35px;
   font-weight: bold;
   text-align: center;
-}
+} 
 .evenements{
   
   background-color: aquamarine;
@@ -314,98 +266,17 @@ gap: 10px;
   padding: 20px;
 }
 .para {
-  display: inline-block;
-  margin-left: 10%;
-  gap: 10px;
+  display: flex;
+  
+ 
 
 }
-/* .blog {
-  font-weight: bold;
-  padding: 20px;
-  background-color: #eee;
-  width: 100%;
-  height: 500px;
-}
-.blog h2{
-  position: relative;
-  text-align: center;
-  font-size: 30px;
-}
-.blog h1{
-  position: relative;
-  text-align: center;
-  top: 30px;
- 
-}
-.blog ul{
-  margin: 10px;
-  padding: 10px;
-}
-.blog  li {
-  list-style-type: none;
-  align-items: center;
+.fin{
+  display: flex;
   justify-content: center;
-  display:inline-block;
-  text-decoration: none;
-  padding: 5px 10px;
-  color: #000;
-  font-size: 15px;
-  margin-left: 10%; 
+  gap: 10%;
 }
-.blog2 ul{
-  margin: 10px;
-  padding: 10px;
-}
-.blog2 li {
-  list-style-type: none;
-  align-items: center;
-  justify-content: center;
-  display:inline-block;
-  text-decoration: none;
-  padding: 5px 10px;
-  color: #000;
-  font-size: 15px;
-  margin-left: 11%; 
-}
-.blog3 ul{
-  margin: 10px;
-  padding: 10px;
-}
-.blog3 li {
-  list-style-type: none;
-  align-items: center;
-  justify-content: center;
-  display:inline-block;
-  text-decoration: none;
-  padding: 5px 10px;
-  color: #000;
-  font-size: 15px;
-  margin-left: 10%; 
-} */
-  /* .menu-hom:hover, .home{
-    border-top: 5px solid #4C8;
-    background-color: RGBa(64, 290, 130, 0.15);
-}
-.menu-prog:hover, .Programmes{
-  border-top: 5px solid #f1dc4f;
-  background-color: RGBa(241, 211, 79, 0.15);
-}
-.menu-cam:hover, .Campus{
-  border-top: 5px  solid #0070BB;
-  background-color: RGBa(000, 112, 192, 0.15);
-}
-.menu-adm:hover, .Admission{
-  border-top: 5px solid #e44d26;
-  background-color: RGBa(228, 77, 38, 0.15);
-}
-.menu-even:hover, .Evenement{
-  border-top: 5px solid #f1dc4f;
-  background-color: RGBa(241, 211, 79, 0.15);
-}
-.menu-blo:hover, .Blog{
-    border-top: 5px  solid #0070BB;
-    background-color: RGBa(000, 112, 192, 0.15); */
-  /* } */
+
 nav li:hover a{
   padding: 15px 30px 20px 30px;
 }
@@ -435,13 +306,42 @@ section{
   display: table;
   clear: both;
 }
-@media only screen and (max-width: 600px) {
-  .icons > p{
-      font-size: 10px;
+@media screen and (min-width: 605px) {
+  .partie1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
-
+  .partie2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  
+  }
+  .ensemble{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 100px;
+  } 
+  .imageavar{ 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    }
+    .admission {
+      font-weight: bold;
+      /* width: 850px; */
+      background-color: #eee;
+    }
+  
 }
-@media only screen and (max-width: 600px) {
+
+@media screen and (max-width: 600px) {
+  .icons > p{
+    font-size: 10px;
+}
   .programme {
     display: flex;
    flex-direction: column;
@@ -502,6 +402,9 @@ section{
       display: flex;
       gap: 50px;
       flex-direction: column;
+      justify-content: center;
+      width: 50%;
+      margin: auto;
     }
     .admission {
       font-weight: bold;
@@ -510,7 +413,7 @@ section{
     }
   
      h3{
-      margin-left: 400px;
+      margin-left: 230px;
      }
     h6{
      margin-left: 200px;
@@ -542,6 +445,13 @@ section{
       margin-top: 35px;
       font-weight: bold;
       text-align: center;
+    }
+    .fin{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      gap: 10%;
     }
  
   
